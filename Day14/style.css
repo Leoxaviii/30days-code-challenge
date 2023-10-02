@@ -1,0 +1,49 @@
+*{
+    padding :0;
+    margin:0;
+    box-sizing :border-box ;
+}
+.header{
+    text-align :center ;
+    font-size :30px ;
+    background-color :#0e5610 ;
+    margin-bottom :40px ;
+    padding:30px;
+    
+}
+.form{
+    border :2px solid black ;
+    background-color :#8eb90fe6;
+    width:300px;
+    height:auto;
+    margin :10px ;
+    justify-content :center ;
+    padding:10px ;
+}
+#name{
+    padding :5px ;
+    width :250px ;
+    border-radius :5px ;
+    margin-bottom :10px ;
+    line-height :1.5 ;
+}
+#email{
+    padding:5px;
+    width:250px;
+    border-radius :5px ;
+    margin-bottom :10px ;
+    line-height :1.5 ;
+}
+textarea{
+    line-height :1.5 ;
+    width:250px;
+    
+}
+input[type="submit"] {
+    padding :4px;
+    width:250px;
+    background-color :#447109e6;
+    border-radius :5px ;
+    cursor :pointer ;
+    margin-top:5px;
+}

@@ -1,0 +1,50 @@
+*{
+   padding :0;
+   margin :0;
+   box-sizing :border-box ;
+}
+#header{
+    text-align :center ;
+    background-color :#2a1a00;
+    color :white ;
+    padding :10px ;
+    line-height :1 ;
+    font-size :25px ;
+}
+#header nav a{
+    text-decoration :none ;
+    color :white ;
+    line-height :2.5;
+    font-size :20px ;
+}
+#grid img{
+    width:220px;
+    height:auto;
+    border-radius :10px ;
+}
+#grid{
+    display :grid ;
+    grid-template-columns :1fr 1fr 1fr 1fr ;
+    gap:10px;
+    margin :10px 10px 20px 10px;
+    
+}
+footer{
+    background-color :#2a1a00;
+    text-align :center ;
+    padding :15px ;
+    color :white ;
+}
+@media(max-width:600px){
+    nav{
+        display :grid;
+    }
+    #grid{
+        display :block;
+      }
+    #grid img{
+        width:300px ;
+        height:auto ;
+        border-radius:10px ;
+       }
+}

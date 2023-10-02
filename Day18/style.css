@@ -1,0 +1,107 @@
+*{
+    padding :0;
+    margin :0;
+    box-sizing :border-box ;
+}
+h1{
+    text-align :center ;
+    font-size :70px ;
+    background-color :#00454b;
+    margin :10px ;
+    width:120%;
+    color :white;
+    margin-bottom:60px ;
+    letter-spacing :2px ;
+    padding :10px ;
+    text-shadow:5px 2px 2px green;
+    font-family :sans-serif;
+}
+#main{
+    display :grid ;
+    grid-template-columns :1fr 1fr 1fr ;
+    gap:20px;
+    margin-right :10px ;
+    margin-left :10px ;
+    font-family :sans-serif ;   text-align :center ;
+    animation: move 1s ease-in both;
+    animation-duration :3s;
+}
+h1:hover {
+    background-color :green;
+    color :black;
+}
+#code{
+    animation-name:code;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    /*animation-iteration-count:;*/
+    animation-direction:alternate;
+    animation-fill-mode: both;
+    
+}
+@keyframes code{
+    from{
+        color :purple;
+        font-size :15rem;
+    }
+    to{
+        color:white;
+        font-size :10rem;
+    }
+}
+@keyframes move{
+    0%{opacity: 0;}
+    70%{transform: translateY(50px);}
+    100%{transform:translateY(0px);opacity: 1;}
+}
+#About{
+    border :2px solid black ;
+    width:370px ;
+    text-align :center ; 
+    margin-left :10px ;
+    border-radius :10px;
+    box-shadow :10px 10px 2px #000000c2;
+    font-size :20px ;
+    line-height :2;
+}
+h2{
+    font-size :70px ;
+}
+#About img{
+    width:360px;
+    margin-top :5px;
+    border-radius :10px ;
+}
+#Services{
+    border:2px solid black ;
+    width:370px;
+    border-radius :10px ;
+    text-align :center ;
+    font-size :20px ;
+    line-height :2;
+    box-shadow:10px 10px 2px #000000c2;
+}
+#Services img{
+    width:360px;
+    border-radius :10px ;
+}
+#Contact{
+    border:2px solid black;
+    width:370px ;
+    border-radius :10px ;
+    text-align :center;
+    font-size :20px ;
+    line-height :2;
+    box-shadow:10px 10px 2px #000000c2;
+}
+#Contact img{
+    width:360px;
+    border-radius :10px ;
+    
+}
+footer {
+    margin-top:50px;
+    text-align:center ;
+    font-size :20px ;
+    margin-left :25%;
+}

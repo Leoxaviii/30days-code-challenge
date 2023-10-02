@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing :border-box ;
+}
+/* style element with a class "container "*/
+.container{
+    border:2px solid black ;/*a border and a color around the container */
+     height :auto ;/* height of the container */
+    margin :10px ;/* margin around the container*/ 
+    padding :10px ;/* padding around the container */
+}
+/*style element with  a  class "header"*/
+.header{
+    border :5px solid black ;/*border and a color around the header*/
+    background-color :#fff12b59;/*background-color of the header*/
+    margin:3% auto ;/*margin around the header
+    padding :5%;/*padding around the header */
+}
+/*style element with a class "border"*/
+.border {
+    background-color :#15b6ff5f;/*background-color of the class header*/
+}

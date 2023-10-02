@@ -1,0 +1,33 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+/* Styles for element with an id "main"*/
+#main{
+    border :2px solid black ;/* border with a color*/ 
+      margin :10px;/* margin around the border */
+     padding :10px;/*padding around the border*/
+}
+/*style for the element with a class "style"*/
+.style{
+    border:2px solid black ;/* border and a color */
+    margin: 5%;/*margin around the border */
+   padding: 5%;/*padding around the border*/
+   width :90%;/*width of the class*/
+   background-color: #ff4069;/*The background-color of the element with a class"style"*/
+}
+/* style  element with a class "model"*/
+.model {
+    background-color:#ff40e7;/*the background-color of the element with class"model" */
+     padding:5%;/*padding around the border */
+    margin: 5%;/*margin around the border */
+    border:2px solid black;/*border and a color*/
+   }
+.text{
+    width:200px;
+    height:200px;
+    border :2px solid black ;
+    margin :3% auto ;
+    background-color :#158cff;
+}

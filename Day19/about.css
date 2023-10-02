@@ -1,0 +1,52 @@
+*{
+    padding :0;
+    margin:0;
+    box-sizing :border-box ;
+}
+nav{
+    background-color :#02041d;
+    text-align :right;
+    padding :10px ;
+}
+nav a{
+    text-decoration :none ;
+    color :white ;
+    font-size :20px ;
+    line-height :2.5 ;
+}
+h1{
+    font-size :50px ;
+    text-align :center ;
+    background-color :#342000;
+    padding :10px ;
+    color:white;
+}
+#content{
+    display :grid ;
+    grid-template-columns :1fr 1fr ;
+    margin:20px;
+    font-family :sans-serif Hervetica ;
+}
+img{
+    width:450px;
+}
+#main{
+    line-height :2;
+}
+@media(max-width:600px){
+    nav{
+        display :grid ;
+        text-align :center;
+    }
+    h1{
+        font-size :30px ;
+    }
+    #content {
+        display :block ;
+        text-align :center ;
+   }
+    img{
+        width:100%;
+        object-fit :cover ;
+    }
+}

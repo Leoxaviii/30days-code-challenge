@@ -1,0 +1,215 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing :border-box ;
+}
+nav{
+     background-color :#0e333a;
+     text-align :right;
+     padding :15px;
+}
+nav a{
+    text-decoration :none ;
+    color :white ;
+    font-size :20px ;
+}
+#header{
+    text-align :center ;
+    line-height :2;
+    margin-top:20px ;
+    font-family :sans-serif Hervetica;
+ /*   font-size :30px ;
+    background-color :whitesmoke;*/
+}
+#header button{
+    background-color :#211706;
+    color :white;
+    width:70px;
+    padding:3px;
+    margin-bottom :20px ;
+}
+#flex img{
+    width:300px ;
+    box-shadow :8px 10px #106262;
+    border-radius :10px ;
+    animation-name :img;
+    animation-duration :2s ;
+    animation-delay :1s ;
+   /* animation-iteration-count:infinite ;*/
+    animation-fill-mode :both;
+}
+@keyframes img{
+    from{
+    transform:rotateX(45deg);
+}
+     to{
+         transform:rotateY(150deg);
+  }
+}
+#flex{
+    display :flex;
+    justify-content :space-around ;
+}
+#flexbox{
+    display :flex ;
+    margin-top:20px ;
+    justify-content :space-around ;
+   /* font-size :30px ;*/
+}
+#flex-item{
+    display :flex ;
+    justify-content :space-around ;
+    margin-top :10px ;
+    margin-bottom :10px ;
+   /* font-size :20px ;*/
+}
+#flex-item1{
+    display:flex;
+    justify-content :space-around ;
+    margin-top:10px ;
+    margin-bottom :10px ;
+  /*  font-size :20px ;*/
+}
+#flex-item1 button{
+    background-color :#211706;
+    color :white ;
+    width:70px;
+    padding:4px;
+}
+/*#btn1{
+    background-color:#211706;
+}
+#btn2 {
+    background-color :#211706;
+}
+#btn3 {
+    background-color :#211706;
+    color :white ;
+}*/
+#content img{
+    width:300px;
+    margin-left :10%;
+    margin-top :30px ;
+    height :300px ;
+}
+#content{
+    display :flex ;
+}
+#content form{
+    line-height :2;
+    margin-left :10%;
+    margin-top :40px ;
+}
+#name{
+    width:400px;
+    padding :5px;
+    border-radius :5px;
+    margin-bottom :30px ;
+}
+#email{
+    width:400px;
+    padding :5px;
+    border-radius :5px ;
+    margin-bottom :30px ;
+}
+textarea{
+    width:400px;
+}
+#send{
+    margin-right :10%;
+    margin-top :8%;
+    background-color :#211706;
+    color :white ;
+    padding:5px;
+}
+footer {
+    background-color :#211706;
+    color :white;
+    padding :15px ;
+    letter-spacing :2px ;
+    margin-top :20%;
+}
+@media(max-width:600px){
+    nav{
+        display :grid ;
+        text-align :center ;
+        line-height :2.5 ;
+       }
+       #flex{
+           display :grid ;
+           gap:2em ;
+       }
+       #flex img{
+           margin-bottom :50px ;
+     }
+     #flex-item1{
+         margin-bottom :30%;
+     }    
+          #service1{
+         bottom:2%;
+          position:absolute;
+           font-size :20px ;
+          }
+          #service2{
+              position :absolute ;
+              bottom:-270px ;
+              font-size :20px ;
+            }
+            #service3{
+                position :absolute ;
+               bottom :-550px;
+               font-size :20px ;
+         }
+    #p1{
+         bottom:-1%;
+         position :absolute;
+     }
+       #p2 {
+           position :absolute;
+           bottom :-50%;
+       }
+       #p3{
+           position :absolute ;
+           bottom:-99%;
+       }
+       #btn1{
+           position :absolute ;
+           bottom :-5%;
+           background-color :#211706;
+           color :white;
+           width:70px;
+           padding:5px ;
+         }
+       #btn2{
+           background-color :#211706;
+           color:white;
+           width :70px;
+           padding :5px ;
+           position :absolute ;
+           bottom:-54%;
+          }
+       #btn3{
+           background-color :#211706;
+           color :white ;
+           width:70px;
+           padding :5px ;
+           position :absolute ;
+           bottom :-105%;
+       }
+       #content {
+           display :grid ;
+       }
+       #content img{
+           width:280px;
+           object-fit :cover ;
+       }
+       #name{
+           width:250px;
+       }
+       #email{
+           width:250px;
+       }
+       textarea{
+           width:250px ;
+          }
+}
