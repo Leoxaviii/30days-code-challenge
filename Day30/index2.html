@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name ="viewport"content"width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="font-sans">
+        <nav class="bg-slate-100 p-4">
+            <h1 class="font-bold text-xl ml-12">Pokémon Info</h1>
+        </nav>
+        <div class="grid grid-cols-4 mx-16 max-md:block max-md:text-xl max-md:mx-12">
+        <div class=" border-12 border-black-200 w-52 shadow-xl text-center rounded-lg mt-4 leading-loose max-md:w-60">
+            <h2 class="font-bold text-2xl mb-4">blastoise</h2>
+            <img class="ml-10"src="" alt="Pokémon">
+            <p><span class ="font-semibold">Height</span>: 16</p>
+            <p><span class="font-semibold">Weight</span>: 855</p>
+            <p><span class="font-bold">Abilities</span>: torture, rain-dish</p>
+        </div>
+        <div class="text-center border-4 border-black-200 border-solid shadow-xl w-52 rounded-lg mt-4 leading-loose max-md:w-60">
+            <h2 class="font-bold text-xl mb-4">metapod</h2>
+            <img class="ml-10"src="" alt="Pokémon">
+            <p><span class="font-semibold">Height</span>: 7</p>
+            <p><span class="font-semibold">Weight</span>: 99</p>
+            <p><span class="font-bold">Abilities</span>: shed-skin</p>
+        </div>
+        <div class="text-center w-52 border-solid border-4 border-black-200 shadow-xl rounded-lg mt-4 leading-loose max-md:w-60">
+            <h2 class="font-bold mb-4">butterfree</h2>
+            <img class="ml-10"src="" alt="Pokémon">
+            <p><span class ="font-semibold">Height</span>: 11</p>
+            <p><span class="font-semibold">Weight</span>: 320</p>
+            <p><span class="font-bold">Abilities</span>:compound-eyes tinted-lens. </p>
+        </div>
+        <div class="text-center border-4 border-black-200 border-solid shadow-xl w-52 rounded-lg mt-4 leading-loose max-md:w-60">
+            <h2 class="font-bold mb-4">carter-pie</h2>
+            <img class="ml-10"src="" alt="Pokémon">
+            <p><span class="font-semibold">Height</span>: 3</p>
+            <p><span class="font-semibold">Weight</span>: 29</p>
+            <p><span class="font-bold">Abilities</span>:shield-dust run-away. </p>
+        </div>
+        <div class="text-center w-52 border-solid border-4 border-black-200 shadow-xl rounded-lg mt-2 leading-loose max-md:w-60">
+            <h2 class="font-bold">weedle</h2>
+            <img class="ml-10"src="" alt="Pokémon">
+            <p><span class="font-semibold">Height</span>: 3</p>
+            <p><span class="font-semibold">Weight</span>: 32</p>
+            <p><span class="font-bold">Abilities</span>:shield-dust, run-away. </p>
+        </div>
+        <div class="text-center w-44 border-solid border-4 border-black-200 w-52 shadow-xl rounded-lg mt-2 leading-loose max-md:w-60">
+            <h2 class="font-bold mb-4">kakuna</h2>
+            <img class="ml-10"src="" alt="Pokémon">
+            <p><span class="font-semibold">Height</span>: 6</p>
+            <p><span class="font-semibold">Weight</span>: 100</p>
+            <p><span class="font-bold">Abilities</span>: shed-skin.</p>
+        </div>
+        <div class="text-center border-4 border-black-200 border-solid shadow-xl w-52 rounded-lg mt-2 leading-loose max-md:w-60">
+            <h2 class="font-bold mb-4">beedrill</h2>
+            <img class="ml-10"src="" alt="Pokémon">
+            <p><span class="font-semibold">Height</span>: 10</p>
+            <p><span class="font-semibold">Weight</span>: 295</p>
+            <p><span class="font-bold">Abilities</span>: swarm, sniper.</p>
+        </div>
+        <div class="text-center border-4 border-black-200 border-solid shadow-xl w-52 rounded-lg mt-2 leading-loose max-md:w-60">
+            <h2 class="font-bold mb-4">pidgey</h2>
+            <img class="ml-10"src="" alt="Pokémon">
+            <p><span class="font-semibold">Height</span>: 3</p>
+            <p><span class ="font-semibold">Weight</span>: 18</p>
+            <p><span class="font-bold">Abilities</span>: leen-eye ,tangled-feet big-pecks.</p>
+        </div>
+        <div class="text-center mt-4 grid grid-cols-2 ml-96 max-md:ml-0 max-md:block">
+            <a class="border-solid border-2 bg-red-500 text-white p-1 w-16"href ="index.html">Previous</a>
+            <a class="border-2 bg-blue-500 text-white p-1 w-16 ml-16"href="index.html">Next</a>
+        </div>
+        </div>
+        <script>
+    const pokemonNames = ["blastoise", "metapod", "butterfree", "caterpie", "weedle", "kakuna", "beedrill", "pidgey", /* Add more Pokémon names here */];
+    
+    // Function to fetch Pokémon data and update the image
+    async function fetchPokemonDataAndUpdateImage() {
+        for (let i = 0; i < pokemonNames.length; i++) {
+            const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonNames[i]}`);
+            const data = await response.json();
+            
+            const imgElement = document.querySelectorAll('img')[i];
+            imgElement.src = data.sprites.front_default;
+        }
+    }
+    
+    // Call the function to fetch and update Pokémon images
+    fetchPokemonDataAndUpdateImage();
+</script>
+</body>
+</html>
